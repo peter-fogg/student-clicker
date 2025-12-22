@@ -11,3 +11,6 @@ wheels/
 
 # Emacs stuff
 *~undo-tree~
+
+# SQLite for testing
+*.db
