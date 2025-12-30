@@ -1,0 +1,15 @@
+{% block content %}
+<h1>hello there</h1>
+<form action='/create_class' method='post' enctype='multipart/form-data'>
+  <label for='class'>Upload a CSV for a class</label>
+  <input type='file' id='class' name='class' accept='text/csv' />
+  <label for='class-name'>Class name</label>
+  <input type='text' id='class-name' name='class-name' />
+  <input type='submit' value='Upload it!'>
+</form>
+<ul>
+  {% for course in courses %}
+  <li>{{ course.name }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
